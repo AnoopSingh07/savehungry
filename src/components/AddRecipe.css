@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nuosu+SIL&family=Roboto+Mono:ital,wght@1,100&family=Roboto:ital@1&family=Tiro+Bangla&display=swap');
+
+.addRecipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(123, 112, 151, 0.674) url("https://source.unsplash.com/1600x900/?search/photos?food,recipe,fruit,dessert,vegetable,juice,breakfast,dinner,snack,lunch") no-repeat;
+    background-blend-mode: darken;
+    background-size: auto;
+    width: 100%;
+    min-height: 104vh;
+}
+
+.addRecipeForm {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    border-radius: 21px;
+    background-color: #4d4d4d8c;
+    padding: 11px 18px;
+    margin: 5px 5px;
+    margin-bottom: 30px;
+    outline: none;
+    box-shadow: 3px 3px rgba(42, 35, 48, 0.951);
+    color: whitesmoke;
+}
+
+::placeholder {
+    color: whitesmoke;
+    opacity: 0.9;
+}
+
+.addrdiv2,
+.addrdiv3,
+label,
+textarea {
+    font-family: 'Tiro Bangla', serif;
+}
+
+.addrdiv2,
+.addrdiv3,
+label {
+    text-shadow: 1px 1px 5px black;
+}
+
+.addrdiv2 {
+    padding-top: 20px;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.addrdiv3 {
+    margin: 5px 0;
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+#addRecipeButton {
+    width: 14%;
+    align-self: center;
+    background: rgb(24 119 242);
+    border-radius: 9px;
+    padding: 2px 0;
+    border: none;
+    font-size: 15px;
+    font-family: 'Tiro Bangla', serif;
+    box-shadow: 2px 2px whitesmoke;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+#addRecipeButton:hover {
+    color: wheat;
+    background-color: rgb(12, 83, 176);
+    box-shadow: 1px 1px 1px 0px whitesmoke;
+}
+
+label {
+    padding: 0 11px;
+}
+
+@media only screen and (max-width: 720px) {
+
+    textarea {
+        padding: 7px 8px;
+        margin: 2px 2px;
+        margin-bottom: 15px;
+        width: 70%;
+        align-self: center;
+    }
+
+    .addrdiv2 {
+        font-size: 19px;
+        padding-top: 17px;
+        color: whitesmoke;
+    }
+
+    .addrdiv3 {
+        font-size: 16px;
+        margin: 5px 0;
+        color: whitesmoke;
+    }
+
+    #addRecipeButton {
+        font-size: 10px;
+        padding: 2px 2px;
+        box-shadow: 1px 1px whitesmoke;
+    }
+
+    label {
+        padding-left: 40px;
+        font-size: 12px;
+    }
+
+}

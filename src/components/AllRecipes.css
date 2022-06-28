@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nuosu+SIL&family=Roboto+Mono:ital,wght@1,100&family=Roboto:ital@1&family=Tiro+Bangla&display=swap');
+
+#headingh3 {
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 0;
+    font-weight: bold;
+    font-size: 21px;
+    font-family: 'Tiro Bangla', serif;
+    text-shadow: 1px 1px 5px black;
+}
+
+.allRecipes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(170, 160, 187, 0.815) url("https://source.unsplash.com/1600x900/?search/photos?food,recipe,salad,fruit,dessert,pizza,burger,sandwich,chicken,nan,cheese,butter,bread,milk,tea,vegetable,juice,fastfood,breakfast,dinner,snack,lunch") no-repeat;
+    background-blend-mode: darken;
+    background-size: cover;
+    width: 100%;
+    min-height: 104vh;
+}
+
+.noresult {
+    color: white;
+    font-size: 18px;
+    font-family: 'Tiro Bangla', serif;
+    padding-top: 30px;
+    text-shadow: 1px 1px 5px black;
+}
+
+@media only screen and (max-width: 1010px) {
+
+    .searchBar {
+        padding: 4px 0;
+    }
+
+    .searchBox {
+        padding: 0 4px;
+        margin-right: 1px;
+        margin-left: 10px;
+        width: 65%;
+        font-size: 11px;
+        border-radius: 11px;
+    }
+
+    .searchdiv {
+        width: 17px;
+
+    }
+
+    #searchButton {
+        padding-left: 3px;
+    }
+
+    .searchIcon {
+        font-size: 21px;
+    }
+}

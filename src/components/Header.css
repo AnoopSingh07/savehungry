@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nuosu+SIL&family=Roboto+Mono:ital,wght@1,100&family=Roboto:ital@1&family=Tiro+Bangla&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+#header {
+    background-color: rgb(41 33 48);
+    display: flex;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    height: fit-content;
+}
+
+.logoutButton {
+    background: #1877f2;
+    box-shadow: 2px 2px 2px 0px whitesmoke;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 2px 5px;
+    height: 18px;
+    width: 5%;
+    margin: 8px 2px;
+    border-radius: 9px;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Tiro Bangla', serif;
+    font-size: 16px;
+    position: relative;
+    top: 0px;
+    right: 9px;
+}
+
+.logoutButton:hover {
+    color: wheat;
+    background-color: rgb(12, 83, 176);
+    box-shadow: 1px 1px 1px 0px whitesmoke;
+}
+
+#navid {
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+    width: 90%;
+    margin-left: 8%;
+    height: fit-content;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+ul li {
+    margin: 3px 10px;
+}
+
+.navitem {
+    color: whitesmoke;
+    padding: 4px 7px;
+    font-family: 'Tiro Bangla', serif;
+    border: 1.6px solid #292130;
+    border-radius: 9px;
+    text-shadow: 1px 2px 7px #de9632;
+}
+
+.navitem:hover {
+    color: wheat;
+    border: 1.6px solid wheat;
+    border-radius: 9px;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.hamburger {
+    padding-top: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    cursor: pointer;
+    filter: invert(100%);
+    display: none;
+}
+
+.hamdiv {
+    display: none;
+    width: 2%;
+    padding: 8px;
+
+}
+
+.home {
+    font-size: 21px;
+}
+
+.poster {
+    background-image: url("https://source.unsplash.com/1600x900/?search/photos?food,recipe,salad,fruit,dessert,pizza,burger,sandwich,chicken,nan,cheese,butter,bread,milk,tea,vegetable,juice,breakfast,dinner,snack,lunch");
+    background-color: rgba(99, 90, 121, 0.793);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 4% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foodysite,
+.hey {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+    font-family: 'Tiro Bangla', serif;
+    text-shadow: 2px 2px 7px #dd9432;
+}
+
+.foodysite {
+    padding-top: 7px;
+    font-size: 80px;
+    border-bottom: 5px double whitesmoke;
+    font-size: 371%;
+    font-weight: bold;
+}
+
+.hey {
+    padding: 5px 0;
+    font-size: 140%;
+    font-weight: bold;
+}
+
+#cook {
+    height: 100px;
+}
+
+.headingbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.centerContent {
+    margin: auto auto;
+    width: max-content;
+}
+
+@media only screen and (max-width: 1010px) {
+
+   
+
+    .foodysite {
+        font-size: 200%;
+    }
+
+    .hey {
+        font-size: 70%;
+    }
+
+    #cook {
+        height: 45px;
+    }
+
+    .hamdiv {
+        display: flex;
+    }
+
+    #navid{
+        display: none;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    ul li a,
+    .logoutButton {
+        font-size: 12px;
+    }
+
+    .logoutButton {
+        height: 14px;
+        width: 51px;
+        border-radius: 7px;
+    }
+}

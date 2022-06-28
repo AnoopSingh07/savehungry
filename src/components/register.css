@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nuosu+SIL&family=Roboto+Mono:ital,wght@1,100&family=Roboto:ital@1&family=Tiro+Bangla&display=swap');
+
+.register {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background: #ffffff4a;
+    border: 1px solid rgb(142 143 161 / 67%);
+    box-shadow: 0 2px 4px rgb(119 118 118 / 90%), 0 8px 16px rgb(41 42 58 / 67%);
+    border-radius: 21px;
+    padding: 1rem;
+    margin: 21px auto;
+    align-items: center;
+    text-align: center;
+}
+
+
+.register>input {
+    border-radius: 8px;
+    border: 2px solid #dddfe2;
+    outline: none;
+    color: #1d2129;
+    margin: 0.5rem 0;
+    padding: 0.5rem 0.75rem;
+    width: 92%;
+    background-color: whitesmoke;
+    font-size: 1rem;
+    box-shadow: 0 1px 3px 0px #282879;
+    font-family: 'Tiro Bangla', serif;
+}
+
+.register>input::placeholder{
+    color: black;
+    opacity: 0.9;
+}
+
+.register>.button {
+    background: #1877f2;
+    box-shadow: 0 1px 3px 0px #282829;
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    width: 95%;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Tiro Bangla', serif;
+}
+
+#registerh1 {
+    color: white;
+    font-family: 'Tiro Bangla', serif;
+}
+
+#alreadySpan {
+    color: #250248;
+    font-family: 'Tiro Bangla', serif;
+}
+
+/* poster part css */
+
+.landingRegister {
+    background-image: url("https://source.unsplash.com/1600x900/?search/photos?food,recipe,salad,fruit,dessert,pizza,burger,sandwich,chicken,nan,cheese,butter,bread,milk,tea,vegetable,juice,breakfast,dinner,snack,lunch");
+    background-color: rgba(99, 90, 121, 0.793);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 4% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foodysite,
+.hey {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+    font-family: 'Tiro Bangla', serif;
+}
+
+.foodysite {
+    padding-top: 7px;
+    font-size: 80px;
+    border-bottom: 5px double whitesmoke;
+    font-size: 371%;
+    font-weight: bold;
+}
+
+.hey {
+    padding: 5px 0;
+    font-size: 140%;
+    font-weight: bold;
+}
+
+#cook {
+    height: 100px;
+}
+
+.headingbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.centerContent {
+    margin: auto auto;
+    width: max-content;
+}
+
+@media only screen and (max-width: 1010px) {
+
+    .register {
+        width: 263px;
+    }
+
+
+    .register>input {
+        padding: 1px 8px;
+        width: 89%;
+        font-size: 13px;
+    }
+
+    .register>.button {
+        font-size: 16px;
+        padding: 1px;
+        margin: 8px 0;
+        border-radius: 8px;
+    }
+
+    #registerh1 {
+        font-size: 21px;
+    }
+
+    #alreadySpan {
+        font-size: 13px;
+    }
+
+    .landingRegister{
+        padding: 8% 0;
+    }
+
+    .foodysite {
+        font-size: 200%;
+    }
+
+    .hey {
+        font-size: 70%;
+    }
+
+    #cook {
+        height: 45px;
+    }
+
+}

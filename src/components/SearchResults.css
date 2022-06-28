@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nuosu+SIL&family=Roboto+Mono:ital,wght@1,100&family=Roboto:ital@1&family=Tiro+Bangla&display=swap');
+
+
+.SearchedRecipes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 2px 6px 0 #555;
+    width: 225px;
+    background-color: #f5f5f5c9;
+    padding: 18px 6px;
+    margin: 12px 14px;
+    border-radius: 14px;
+}
+
+.SearchedRecipes img {
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 0px rgb(70 70 70);
+}
+
+.ingredients {
+    cursor: pointer;
+    box-shadow: 1px 1px 3px 0px #0e360d;
+    color: whitesmoke;
+    background-color: green;
+    border-radius: 7px;
+    padding: 3px;
+    margin: 4px;
+    width: 79%;
+    font-family: 'Tiro Bangla', serif;
+    text-align: center;
+}
+
+.ingredients:hover {
+    width: 80%;
+    background-color: #046704;
+}
+.seecr:hover {
+    width: 80%;
+    background-color: #473197;
+}
+
+.seecr {
+    cursor: pointer;
+    box-shadow: 1px 1px 3px 0px #28223f;
+    background-color: hwb(253deg 29% 27%);
+    color: whitesmoke;
+    border-radius: 7px;
+    padding: 3px;
+    margin: 4px;
+    text-align: center;
+    width: 79%;
+    font-family: 'Tiro Bangla', serif;
+}
+
+.label {
+    padding: 5px 5px;
+    font-family: 'Tiro Bangla', serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 9px;
+}

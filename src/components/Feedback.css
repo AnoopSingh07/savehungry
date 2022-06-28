@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nuosu+SIL&family=Roboto+Mono:ital,wght@1,100&family=Roboto:ital@1&family=Tiro+Bangla&display=swap');
+
+.feedBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(123, 112, 151, 0.674) url("https://source.unsplash.com/1600x900/?search/photos?food,recipe,fruit,dessert,vegetable,juice,breakfast,butter,bread,milk,tea,dinner,snack,lunch") no-repeat;
+    background-blend-mode: darken;
+    background-size: auto;
+    width: 100%;
+    min-height: 104vh;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 21px;
+}
+
+.feeddiv3 {
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+textarea {
+    border-radius: 21px;
+    padding: 11px 18px;
+    margin: 5px 5px;
+    background-color: #4d4d4d8c;
+    margin-bottom: 30px;
+    outline: none;
+    box-shadow: 3px 3px rgba(42, 35, 48, 0.951);
+    color: whitesmoke;
+}
+
+::placeholder {
+    color: whitesmoke;
+    opacity: 0.9;
+}
+
+#feedbackButton {
+    width: 12%;
+    align-self: center;
+    background: rgb(24 119 242);
+    border-radius: 9px;
+    padding: 2px 0;
+    border: none;
+    font-size: 15px;
+    font-family: 'Tiro Bangla', serif;
+    color: whitesmoke;
+    box-shadow: 2px 2px whitesmoke;
+    cursor: pointer;
+}
+
+#feedbackButton:hover {
+    color: wheat;
+    background-color: rgb(12, 83, 176);
+    box-shadow: 1px 1px 1px 0px whitesmoke;
+}
+
+.feeddiv3,
+label {
+    font-family: 'Tiro Bangla', serif;
+    color: whitesmoke;
+    text-shadow: 1px 1px 5px black;
+}
+
+label {
+    padding: 0 11px;
+}
+
+@media only screen and (max-width: 720px) {
+
+    textarea {
+        padding: 7px 8px;
+        margin: 2px 2px;
+        margin-bottom: 15px;
+        width: 70%;
+        align-self: center;
+    }
+
+    #feedbackButton {
+        font-size: 10px;
+        padding: 1px 0;
+        box-shadow: 1px 1px whitesmoke;
+    }
+
+    .feeddiv3 {
+        font-size: 16px;
+        text-align: center;
+        margin: 5px 0;
+        color: whitesmoke;
+        padding: 5px 0;
+        font-weight: bold;
+    }
+
+    label {
+        padding-left: 40px;
+        font-size: 12px;
+    }
+
+}

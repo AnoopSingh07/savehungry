@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nuosu+SIL&family=Roboto+Mono:ital,wght@1,100&family=Roboto:ital@1&family=Tiro+Bangla&display=swap');
+
+.footerDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3px 0;
+    background-color: rgba(44, 44, 60, 0.915);
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+footer {
+    color: whitesmoke;
+    font-family: 'Tiro Bangla', serif;
+}
+
+@media only screen and (max-width: 720px) {
+
+    footer {
+        font-size: 10px;
+    }
+
+}
