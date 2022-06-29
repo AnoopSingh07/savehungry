@@ -47,7 +47,7 @@ const Register = () => {
 
                     <div className="headingbox" >
                         <img id="cook" src={foodlogo5} alt="cookfood" />
-                        <span className="foodysite">Foodysite</span>
+                        <span className="foodysite">Savehungry</span>
                     </div>
 
                     <span className="hey">Hey! Your Recipe search ends here.</span>
@@ -55,7 +55,7 @@ const Register = () => {
                 </div>
 
                 <div className="register">
-                    {console.log("User", user)}
+                    {/* {console.log("User", user)} */}
                     <h1 id="registerh1">Register</h1>
                     <input type="text" name="name" value={user.name} placeholder="Your Name" onChange={handleChange}></input>
                     <input type="text" name="email" value={user.email} placeholder="Your Email" onChange={handleChange}></input>

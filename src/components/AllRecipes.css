@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgba(170, 160, 187, 0.815) url("https://source.unsplash.com/1600x900/?search/photos?food,recipe,salad,fruit,dessert,pizza,burger,sandwich,chicken,nan,cheese,butter,bread,milk,tea,vegetable,juice,fastfood,breakfast,dinner,snack,lunch") no-repeat;
+    background: rgba(170, 160, 187, 0.815) url("https://source.unsplash.com/1600x900/?search/photos?food,recipe,salad,fruit,dessert,pizza,burger,sandwich,chicken,nan,cheese,butter,bread,milk,tea,meat,cuisine,vegetable,juice,fastfood,breakfast,dinner,snack,lunch") no-repeat;
     background-blend-mode: darken;
     background-size: cover;
     width: 100%;
@@ -63,7 +63,7 @@
 @media only screen and (min-width:600px) and (max-width: 970px) {
 
     .allRecipes{
-        background-image: url("https://source.unsplash.com/780x1000/?search/photos?food,recipe,salad,fruit,dessert,pizza,burger,sandwich,chicken,nan,cheese,butter,bread,milk,tea,vegetable,juice,breakfast,dinner,snack,lunch");
+        background-image: url("https://source.unsplash.com/780x1000/?search/photos?food,recipe,salad,fruit,dessert,pizza,burger,sandwich,chicken,nan,cheese,butter,bread,milk,tea,vegetable,meat,cuisine,juice,breakfast,dinner,snack,lunch");
         padding-bottom: 500px;
     }
 
@@ -71,7 +71,7 @@
 @media only screen and (min-width:420px) and (max-width: 600px) {
 
     .allRecipes{
-        background-image: url("https://source.unsplash.com/600x1000/?search/photos?food,recipe,salad,fruit,dessert,pizza,burger,sandwich,chicken,nan,cheese,butter,bread,milk,tea,vegetable,juice,breakfast,dinner,snack,lunch");
+        background-image: url("https://source.unsplash.com/600x1000/?search/photos?food,recipe,salad,fruit,dessert,pizza,burger,sandwich,chicken,nan,cheese,butter,bread,milk,tea,meat,cuisine,vegetable,juice,breakfast,dinner,snack,lunch");
         padding-bottom: 500px;
     }
 
@@ -79,14 +79,14 @@
 @media only screen and (min-width:250px) and (max-width: 420px) {
 
     .allRecipes{
-        background-image: url("https://source.unsplash.com/330x1000/?search/photos?food,recipe,salad,fruit,dessert,pizza,burger,sandwich,chicken,nan,cheese,butter,bread,milk,tea,vegetable,juice,breakfast,dinner,snack,lunch");
+        background-image: url("https://source.unsplash.com/330x1000/?search/photos?food,recipe,salad,fruit,dessert,pizza,burger,sandwich,chicken,nan,cheese,butter,bread,meat,cuisine,milk,tea,vegetable,juice,breakfast,dinner,snack,lunch");
         padding-bottom: 500px;
     }
 
 }
 @media only screen and (min-width:250px) and (max-width: 320px) {
     .allRecipes{
-        background-image: url("https://source.unsplash.com/280x1000/?search/photos?food,recipe,salad,fruit,dessert,pizza,burger,sandwich,chicken,nan,cheese,butter,bread,milk,tea,vegetable,juice,breakfast,dinner,snack,lunch");
+        background-image: url("https://source.unsplash.com/280x1000/?search/photos?food,recipe,salad,fruit,dessert,pizza,burger,sandwich,chicken,nan,cheese,butter,bread,milk,tea,vegetable,juice,meat,cuisine,breakfast,dinner,snack,lunch");
         padding-bottom: 500px;
     }
 }

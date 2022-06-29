@@ -10,7 +10,7 @@ function Feedback(props) {
     let [userFeedback, setFeedback] = useState("");
 
     const handleChange = e => {
-        console.log(e);
+        // console.log(e);
         const { value } = e.target;
         setFeedback(value);
     };
@@ -20,10 +20,10 @@ function Feedback(props) {
             .then(res => {
                 alert(res.data.message);
                 setLoginUser(res.data.user);
-                console.log(currentUser);
+                // console.log(currentUser);
                 setFeedback("");
             }).catch((err) => {
-                console.log("error message from submit button ", err);
+                // console.log("error message from submit button ", err);
             })
     };
 

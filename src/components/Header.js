@@ -28,7 +28,7 @@ const Header = ({ setLoginUser }) => {
             navigate("/");
         }
         else {
-            console.log("clicked by mistake.");
+            // console.log("clicked by mistake.");
         }
     };
 
@@ -62,7 +62,7 @@ export const Poster = () => {
                 <div className="centerContent">
                     <div className="headingbox" >
                         <img id="cook" src={foodlogo5} alt="cookfood" />
-                        <span className="foodysite">Foodysite</span>
+                        <span className="foodysite">Savehungry</span>
                     </div>
                     <span className="hey">Hey! Your Recipe search ends here.</span>
                 </div>

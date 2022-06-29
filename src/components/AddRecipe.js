@@ -10,7 +10,7 @@ const AddRecipe = (props) => {
     let [userRecipe, setUserRecipe] = useState("");
 
     const handleChange = e => {
-        console.log(e);
+        // console.log(e);
         const { value } = e.target;
         setUserRecipe(value);
     }
@@ -20,10 +20,10 @@ const AddRecipe = (props) => {
             .then(res => {
                 alert(res.data.message);
                 setLoginUser(res.data.user);
-                console.log(currentUser);
+                // console.log(currentUser);
                 setUserRecipe("");
             }).catch((err) => {
-                console.log("error message from submit button ", err);
+                // console.log("error message from submit button ", err);
             })
     };
 
@@ -31,7 +31,7 @@ const AddRecipe = (props) => {
         <>
             <div className="addRecipe">
                 <div className='addrdiv2'>Add Your Recipe Here</div>
-                <div className='addrdiv3'>And your recipe may be added on Foodysite</div>
+                <div className='addrdiv3'>And your recipe may be added on Savehungry</div>
                 <div className="addRecipeForm">
                     <label htmlFor="yourRecipe">Enter your recipe here</label>
                     <textarea id="addRecipeArea" rows="15" cols="85" name="yourRecipe" value={userRecipe} onChange={handleChange} placeholder='Write here...'></textarea>

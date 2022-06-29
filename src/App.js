@@ -25,7 +25,7 @@ function App() {
 
   const fetchRecipe = async (searchString) => {
     const response = await axios.get(`https://api.edamam.com/api/recipes/v2?type=public&beta=true&q=${searchString}&app_id=${app_id}&app_key=${app_key}`);
-    console.log(response);//
+    // console.log(response);
     updateRecipeList(response.data.hits);
   };
 
@@ -44,7 +44,7 @@ function App() {
 
           <Route exact path="/" element={<>
             <div>
-              {console.log("user returned from database", user)}
+              {/* {console.log("user returned from database", user)} */}
               {
                 user && user._id ? <>
                   <Header setLoginUser={setLoginUser} />

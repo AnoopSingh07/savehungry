@@ -13,7 +13,7 @@ mongoose.connect("mongodb+srv://Anoop:8964936487@cluster0.tce623z.mongodb.net/fo
     useNewUrlParser: true,
     useUnifiedTopology: true
 }, () => {
-    console.log("DB connected");
+    // console.log("DB connected");
 });
 
 const userSchema = new mongoose.Schema({
@@ -32,9 +32,9 @@ app.post("/login", (req, res) => {
     User.findOne({ email: email }, (err, user) => {
         if (user) {
             if (password === user.password) {
-                res.send({ message: "Login Successfull", user: user });
+                res.send({ message: "Login Successfull, welcome to Savehungry", user: user });
             } else {
-                res.send({ message: "Password didn't match" });
+                res.send({ message: "Incorrect password" });
             }
         } else {
             res.send({ message: "User not registered", user: {} });
@@ -69,8 +69,8 @@ app.post("/register", (req, res) => {
 
 app.post("/feedback", (req, res) => {
     const { userFeedback, currentUser } = req.body;
-    console.log(req.body);//
-    console.log(userFeedback);//
+    // console.log(req.body);
+    // console.log(userFeedback);
     User.findOne({ email: currentUser.email }, (err, user) => {
         if (user) {
             user.feedback = userFeedback;
@@ -79,7 +79,7 @@ app.post("/feedback", (req, res) => {
                     res.send({ message: error });
                 } else {
                     res.send({ message: "Your feedback submitted successfully.", user: user });
-                    console.log(user);
+                    // console.log(user);
                 }
             });
         }
@@ -91,8 +91,8 @@ app.post("/feedback", (req, res) => {
 
 app.post("/add-recipe", (req, res) => {
     const { userRecipe, currentUser } = req.body;
-    console.log(req.body);//
-    console.log(userRecipe);//
+    // console.log(req.body);
+    // console.log(userRecipe);
     User.findOne({ email: currentUser.email }, (err, user) => {
         if (user) {
             user.userRecipe = userRecipe;
@@ -101,7 +101,7 @@ app.post("/add-recipe", (req, res) => {
                     res.send({ message: error });
                 } else {
                     res.send({ message: "Your recipe submitted successfully.", user: user });
-                    console.log(user);
+                    // console.log(user);
                 }
             });
         }
@@ -115,5 +115,5 @@ const buildPath=path.join(__dirname, '..', 'build');
 app.use(express.static(buildPath));
 
 app.listen(PORT, () => {
-    console.log("server started on port: ", PORT);
+    // console.log("server started on port: ", PORT);
 });

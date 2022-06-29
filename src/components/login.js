@@ -27,10 +27,10 @@ const Login = (props) => {
             .then(res => {
                 alert(res.data.message);
                 setLoginUser(res.data.user);
-                console.log(user);//
+                // console.log(user);
                 navigate("/");
             }).catch((err) => {
-                console.log(err);
+                // console.log(err);
             })
     }
 
@@ -42,7 +42,7 @@ const Login = (props) => {
 
                     <div className="headingbox" >
                         <img id="cook" src={foodlogo5} alt="cookfood" />
-                        <span className="foodysite">Foodysite</span>
+                        <span className="foodysite">Savehungry</span>
                     </div>
 
                     <span className="hey">Hey! Your Recipe search ends here.</span>
@@ -54,7 +54,7 @@ const Login = (props) => {
                     <input type="text" name="email" value={user.email} onChange={handleChange} placeholder="Enter your Email"></input>
                     <input type="password" name="password" value={user.password} onChange={handleChange} placeholder="Enter your Password" ></input>
                     <div className="button" onClick={login}>Login</div>
-                    <span id="areYouSpan">Are you new on Foodysite?</span>
+                    <span id="areYouSpan">Are you new on Savehungry?</span>
                     <div className="button" onClick={() => navigate("/register")}>Register here</div>
                 </div>
 

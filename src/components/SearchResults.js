@@ -4,7 +4,7 @@ import './SearchBar.css';
 import './SearchResults.css';
 
 const SearchResults = (props) => {
-  console.log("props ", props);
+  // console.log("props ", props);
 const { recipeObj,ID } = props;
 
   return (

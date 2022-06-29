@@ -11,7 +11,7 @@ const AllRecipes = (props) => {
     return (
 
         <div className="allRecipes">
-            <h3 id="headingh3">Explore all recipes of Foodysite</h3>
+            <h3 id="headingh3">Explore all recipes of Savehungry</h3>
             <SearchBar onTextChange={onTextChange} />
             <div className='SearchResults' id="recAndIng">
                 {
