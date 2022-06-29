@@ -6,7 +6,7 @@ const Footer = () => {
         <>
             <div className='footerDiv'>
                 <footer >
-                    Copyright &copy; 2022 All Rights Reserved | as14072002@gmail.com
+                    Copyright &copy; 2022 Anoop Singh. All Rights Reserved 
                 </footer>
             </div>
         </>

@@ -51,6 +51,7 @@ function App() {
                   <div className="App">
                     <Poster className="posterbackground" />
                   </div>
+                  < Footer />
                 </> : <Login setLoginUser={setLoginUser} />
               }
             </div>
@@ -62,6 +63,7 @@ function App() {
             <div className="App">
               <Poster className="posterbackground" setLoginUser={setLoginUser} />
             </div>
+            < Footer />
           </>} />
 
           <Route exact path="/login" element={<>
@@ -82,6 +84,7 @@ function App() {
             <div>
               <AddRecipe setLoginUser={setLoginUser} currentUser={user} />
             </div>
+            < Footer />
           </>} />
 
           <Route exact path="/all-recipe" element={<>
@@ -96,11 +99,10 @@ function App() {
             <div>
               <Feedback setLoginUser={setLoginUser} currentUser={user} />
             </div>
+            < Footer />
           </>} />
 
         </Routes>
-
-        < Footer />
 
       </Router>
     </>
