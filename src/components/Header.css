@@ -14,6 +14,7 @@
     top: 0;
     justify-content: space-between;
     height: fit-content;
+    z-index: +1;
 }
 
 .logoutButton {
@@ -58,12 +59,15 @@ ul {
 }
 
 ul li {
-    margin: 3px 10px;
+    margin: 1px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .navitem {
     color: whitesmoke;
-    padding: 4px 7px;
+    padding: 2px 11px;
     font-family: 'Tiro Bangla', serif;
     border: 1.6px solid #292130;
     border-radius: 9px;
@@ -111,6 +115,7 @@ ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 270px;
 }
 
 .foodysite,
@@ -190,5 +195,38 @@ ul li a {
         height: 14px;
         width: 51px;
         border-radius: 7px;
+    }
+}
+
+
+@media only screen and (min-width:600px) and (max-width: 970px) {
+
+    .poster{
+        background-image: url("https://source.unsplash.com/780x1000/?search/photos?food,recipe,salad,fruit,dessert,pizza,burger,sandwich,chicken,nan,cheese,butter,bread,milk,tea,vegetable,juice,breakfast,dinner,snack,lunch");
+        padding-bottom: 500px;
+    }
+
+}
+@media only screen and (min-width:420px) and (max-width: 600px) {
+
+    .poster{
+        background-image: url("https://source.unsplash.com/600x1000/?search/photos?food,recipe,salad,fruit,dessert,pizza,burger,sandwich,chicken,nan,cheese,butter,bread,milk,tea,vegetable,juice,breakfast,dinner,snack,lunch");
+        padding-bottom: 500px;
+    }
+
+}
+@media only screen and (min-width:250px) and (max-width: 420px) {
+
+    .poster{
+        background-image: url("https://source.unsplash.com/330x1000/?search/photos?food,recipe,salad,fruit,dessert,pizza,burger,sandwich,chicken,nan,cheese,butter,bread,milk,tea,vegetable,juice,breakfast,dinner,snack,lunch");
+        padding-bottom: 500px;
+    }
+
+}
+@media only screen and (min-width:250px) and (max-width: 320px) {
+
+    .poster{
+        background-image: url("https://source.unsplash.com/280x1000/?search/photos?food,recipe,salad,fruit,dessert,pizza,burger,sandwich,chicken,nan,cheese,butter,bread,milk,tea,vegetable,juice,breakfast,dinner,snack,lunch");
+        padding-bottom: 500px;
     }
 }

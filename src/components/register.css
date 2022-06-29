@@ -141,7 +141,8 @@
     }
 
     .landingRegister{
-        padding: 8% 0;
+        background-image: url("https://source.unsplash.com/1000x700/?search/photos?food,recipe,salad,fruit,dessert,pizza,burger,sandwich,chicken,nan,cheese,butter,bread,milk,tea,vegetable,juice,breakfast,dinner,snack,lunch");
+        padding: 10% 0;
     }
 
     .foodysite {
@@ -154,6 +155,44 @@
 
     #cook {
         height: 45px;
+    }
+
+}
+
+
+@media only screen and (min-width:600px) and (max-width: 970px) {
+
+    .landingRegister{
+        background-image: url("https://source.unsplash.com/780x1000/?search/photos?food,recipe,salad,fruit,dessert,pizza,burger,sandwich,chicken,nan,cheese,butter,bread,milk,tea,vegetable,juice,breakfast,dinner,snack,lunch");
+        padding-bottom: 490px;
+    }
+
+}
+@media only screen and (min-width:420px) and (max-width: 600px) {
+
+    .landingRegister{
+        background-image: url("https://source.unsplash.com/600x1000/?search/photos?food,recipe,salad,fruit,dessert,pizza,burger,sandwich,chicken,nan,cheese,butter,bread,milk,tea,vegetable,juice,breakfast,dinner,snack,lunch");
+        padding-bottom: 490px;
+    }
+
+}
+@media only screen and (min-width:250px) and (max-width: 420px) {
+
+    .landingRegister{
+        background-image: url("https://source.unsplash.com/330x1000/?search/photos?food,recipe,salad,fruit,dessert,pizza,burger,sandwich,chicken,nan,cheese,butter,bread,milk,tea,vegetable,juice,breakfast,dinner,snack,lunch");
+        padding-bottom: 490px;
+    }
+
+}
+@media only screen and (min-width:250px) and (max-width: 320px) {
+
+    .landingRegister{
+        background-image: url("https://source.unsplash.com/280x1000/?search/photos?food,recipe,salad,fruit,dessert,pizza,burger,sandwich,chicken,nan,cheese,butter,bread,milk,tea,vegetable,juice,breakfast,dinner,snack,lunch");
+        padding-bottom: 490px;
+    }
+
+    .register {
+        width: 205px;
     }
 
 }
