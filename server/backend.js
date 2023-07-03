@@ -7,13 +7,13 @@ const PORT = process.env.PORT || 9002;
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
-// app.use(cors());
-//localhost-->>////////////     'mongodb://localhost:27017/myFoodysiteLoginRegisterDB' 
-mongoose.connect("mongodb+srv://Anoop:8964936487@cluster0.tce623z.mongodb.net/foodysiteDB?retryWrites=true&w=majority", {
+// app.use(cors());"mongodb+srv://Anoop:9wT2owazxfmKuqDo@cluster0.tce623z.mongodb.net/?retryWrites=true&w=majority"
+//localhost-->>////////////     'mongodb://localhost:27017/myFoodysiteLoginRegisterDB'
+mongoose.connect("mongodb+srv://Anoop:9wT2owazxfmKuqDo@cluster0.tce623z.mongodb.net/foodysiteDB?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }, () => {
-    // console.log("DB connected");
+    console.log("DB connected");
 });
 
 const userSchema = new mongoose.Schema({
@@ -115,5 +115,5 @@ const buildPath=path.join(__dirname, '..', 'build');
 app.use(express.static(buildPath));
 
 app.listen(PORT, () => {
-    // console.log("server started on port: ", PORT);
+    console.log("server started on port: ", PORT);
 });
