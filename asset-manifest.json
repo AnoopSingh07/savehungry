@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/savehungry/static/css/main.822a20a5.css",
+    "main.js": "/savehungry/static/js/main.27b67429.js",
+    "static/media/foodlogo1.png": "/savehungry/static/media/foodlogo1.9a891f81e384385b5010.png",
+    "index.html": "/savehungry/index.html",
+    "main.822a20a5.css.map": "/savehungry/static/css/main.822a20a5.css.map",
+    "main.27b67429.js.map": "/savehungry/static/js/main.27b67429.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.822a20a5.css",
+    "static/js/main.27b67429.js"
+  ]
+}
